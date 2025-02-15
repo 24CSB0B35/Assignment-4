@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Heritage Sites - Hyderabad</title>
+    <style>
+        /* Global Styles */
+        body {
+            text-align: center;
+            font-family: 'Poppins', sans-serif;
+            background-color: #f4f4f4;
+            padding: 30px;
+        }
+
+        h1 {
+            font-size: 36px;
+            color: #800000;
+            margin-bottom: 20px;
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+        }
+
+        .heritage-container {
+            max-width: 1200px;
+            margin: auto;
+            padding: 20px;
+        }
+
+        /* Grid for Images */
+        .heritage-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 20px;
+            justify-content: center;
+            padding: 20px;
+        }
+
+        /* Image Styling */
+        .heritage-list img {
+            width: 100%;
+            height: 200px;
+            border-radius: 10px;
+            object-fit: cover;
+            transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+            cursor: pointer;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Hover Effects */
+        .heritage-list img:hover {
+            transform: scale(1.08);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 28px;
+            }
+            .heritage-list {
+                grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            }
+        }
+    </style>
+</head>
+<body>
+
+<h1>Hyderabad Heritage Sites</h1>
+
+<div class="heritage-container">
+    <div class="heritage-list">
+        <img src="charminar.png" alt="Charminar">
+        <img src="golcondafort.png" alt="Golconda Fort">
+        <img src="tombs.png" alt="Qutub Shahi Tombs">
+        <img src="chowmalla.png" alt="Chowmahalla Palace">
+        <img src="falaknumapalace.png" alt="Falaknuma Palace">
+    </div>
+</div>
+
+</body>
+</html>
