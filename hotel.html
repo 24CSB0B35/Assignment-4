@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body {
+  background-color:white;
+}
+.container {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+.bottom-right {
+  position: absolute;
+  bottom: 20px;
+  right: 16px;
+font-size:60px;
+font-style: italic;
+}
+p.italic{
+font-style:italic;
+}
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #D2691E;
+border-radius:10px;
+}
+
+li {
+  float: left;
+}
+
+li a, .dropbtn {
+  display: inline-block;
+  color: #FFFAF0;
+  text-align: center;
+  padding: 18px 35px;
+  text-decoration: none;
+border-radius:20px;
+}
+
+li a:hover, .dropdown:hover .dropbtn {
+  background-color: #FFA07A;
+}
+
+.booking-form {
+            width: 50%;
+            margin: 20px auto;
+        }
+
+        .booking-form input, .booking-form select {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+        }
+
+        .booking-form button {
+            padding: 10px 20px;
+            background-color: #333;
+            color: white;
+            border: none;
+            cursor: pointer;
+border-radius:10px;
+        }
+
+        .booking-form button:hover {
+            background-color: #555;
+
+        }
+
+        .gallery-images {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 10px;
+        }
+
+        .gallery-images img {
+            width: 100%;
+            height: auto;
+        }
+
+</style>
+</head>
+<body>
+<img src="yy.jpg" width="250" height="250" alt="rome" >
+
+<ul>
+  <li><a href="home.html">Home</a></li>
+  <li><a href="heritage.html">Heritage</a></li>
+<li><a href="hotel.html">Hotel Booking</a></li>
+<li><a href="group.html">Gallery</a></li>
+  </ul>
+
+<section class="booking-form">
+        <h2>Book Your Stay</h2>
+
+        <form action="#" method="post">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="checkin">Check-in Date:</label>
+            <input type="date" id="checkin" name="checkin" required>
+
+            <label for="checkout">Check-out Date:</label>
+            <input type="date" id="checkout" name="checkout" required>
+
+            <label for="room-type">Room Type:</label>
+            <select id="room-type" name="room-type" required>
+                <option value="single">Single</option>
+                <option value="double">Double</option>
+                <option value="suite">Suite</option>
+            </select>
+
+            <button type="submit">Book Now</button>
+        </form>
+    </section>
+</div>
+    <footer>
+        <p>&copy; 2025 City Tourism. All rights reserved.</p>
+    </footer>
+</div>
+
+</body>
+</html>
+
+
+
+
